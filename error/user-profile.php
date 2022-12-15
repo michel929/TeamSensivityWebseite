@@ -1,302 +1,601 @@
-<?php
-session_start();
-if (!empty($_SESSION["discord_id"])) {
-    $login = 1;
-    $your_username = $_SESSION["discord_username"];
-    $your_pb = $_SESSION["discord_pb"];
-
-} else {
-    $login = 0;
-}
-
-$servername = "main-mariadb:3306";
-$usernamee = "discord";
-$password = "HGpcejWBMZF4V3kM2h7y";
-$dbname = "Sensivity";
-
-$conn = mysqli_connect($servername, $usernamee, $password, $dbname);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-$sql = "SELECT * FROM users";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-    while ($row = mysqli_fetch_assoc($result)) {
-        if ($row["website_url"] == $username) {
-            $banner = $row["discord_banner"];
-            $pb = $row["discord_pb"];
-            $discord_name = $row["discord_username"];
-        }
-    }
-}
-
-mysqli_close($conn);
-?>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="de"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="de"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="de"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="de"> <!--<![endif]-->
 
 <head>
-    <link rel="icon" type="image/png" sizes="32x32"
-          href="https://sensivity.team/dashboard/assets/images/logos/favicon.png"/>
-    <link rel="icon" type="image/png" sizes="16x16"
-          href="https://sensivity.team/dashboard/assets/images/logos/favicon.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://sensivity.team/assets/profile/style.css">
-    <title><?php echo $username; ?> Profile</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content="TeamSensivity">
+    <meta name="author" content="michel929">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Team Sensivity</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- !Google Fonts -->
+
+    <!-- Styles -->
+    <link type="text/css" rel="stylesheet" href="/assets/css/plugins.css?ver=6.0" />
+    <link type="text/css" rel="stylesheet" href="/assets/css/style.css?ver=6.0" />
+    <!--[if lt IE 9]> <script type="text/javascript" src="/assets/js/modernizr.custom.js?ver=6.0"></script> <![endif]-->
+    <!-- !Styles -->
+
 </head>
+
 <body>
-<div class="main-content">
-    <!-- Top navbar -->
-    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
-        <div class="container-fluid">
-            <!-- Brand -->
-            <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block"
-               href="/" target="_blank">Team Sensivity</a>
-            <!-- User -->
-            <ul class="navbar-nav align-items-center d-none d-md-flex">
-                <li class="nav-item dropdown">
-                    <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false">
-                        <div class="media align-items-center">
 
-                            <?php
-                            if ($login == 1) {
-                                echo '<span class="avatar avatar-sm rounded-circle"><img src="' . $your_pb . '"></span>';
-                            }
-                            ?>
-                            <div class="media-body ml-2 d-none d-lg-block">
-                                <span class="mb-0 text-sm  font-weight-bold">
-                                    <?php
-                                    if ($login == 0) {
-                                        echo "Login";
-                                    } else {
-                                        echo $your_username;
-                                    }
-                                    ?>
-                                    </span>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-                        <div class=" dropdown-header noti-title">
-                            <h6 class="text-overflow m-0">Welcome!</h6>
-                        </div>
-                        <a href="../examples/profile.html" class="dropdown-item">
-                            <i class="ni ni-single-02"></i>
-                            <span>My profile</span>
-                        </a>
-                        <a href="../examples/profile.html" class="dropdown-item">
-                            <i class="ni ni-settings-gear-65"></i>
-                            <span>Settings</span>
-                        </a>
-                        <a href="../examples/profile.html" class="dropdown-item">
-                            <i class="ni ni-calendar-grid-58"></i>
-                            <span>Activity</span>
-                        </a>
-                        <a href="../examples/profile.html" class="dropdown-item">
-                            <i class="ni ni-support-16"></i>
-                            <span>Support</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#!" class="dropdown-item">
-                            <i class="ni ni-user-run"></i>
-                            <span>Logout</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Header -->
-    <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
-         style="min-height: 400px; background-image: url(<?php echo $banner; ?>); background-size: cover; background-position: center top;">
-        <!-- Mask -->
-        <span class="mask bg-gradient-default opacity-8"></span>
 
-    </div>
-    <!-- Page content -->
-    <div class="container-fluid mt--7">
-        <div class="row">
-            <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
-                <div class="card card-profile shadow">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-3 order-lg-2">
-                            <div class="card-profile-image">
-                                <a href="#">
-                                    <?php
-                                    echo '<img src="' . $pb . '" class="rounded-circle">';
-                                    ?>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-                        <div class="d-flex justify-content-between">
-                            <a href="#" class="btn btn-sm btn-info mr-4">Connect</a>
-                            <a href="#" class="btn btn-sm btn-default float-right">Message</a>
-                        </div>
-                    </div>
-                    <div class="card-body pt-0 pt-md-4">
-                        <div class="row">
-                            <div class="col">
-                                <div class="card-profile-stats d-flex justify-content-center mt-md-5">
-                                    <div>
-                                        <span class="heading">22</span>
-                                        <span class="description">Friends</span>
-                                    </div>
-                                    <div>
-                                        <span class="heading">10</span>
-                                        <span class="description">Photos</span>
-                                    </div>
-                                    <div>
-                                        <span class="heading">89</span>
-                                        <span class="description">Comments</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <h3>
-                                <?php echo $discord_name; ?><span class="font-weight-light"></span>
-                            </h3>
-                            <div class="h5 font-weight-300">
-                                <i class="ni location_pin mr-2"></i>@<?php echo $username; ?>
-                            </div>
-                            <div class="h5 mt-4">
-                                <i class="ni business_briefcase-24 mr-2"></i>Solution Manager - Creative Tim Officer
-                            </div>
-                            <div>
-                                <i class="ni education_hat mr-2"></i>University of Computer Science
-                            </div>
-                            <hr class="my-4">
-                            <p>Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                                and records all of his own music.</p>
-                            <a href="#">Show more</a>
-                        </div>
-                    </div>
-                </div>
+<!-- Preloader -->
+<div class="metaportal_fn_preloader">
+    <div class="loading-container">
+        <div class="loading">
+            <div class="l1">
+                <div></div>
             </div>
-            <div class="col-xl-8 order-xl-1">
-                <div class="card bg-secondary shadow">
-                    <div class="card-header bg-white border-0">
-                        <div class="row align-items-center">
-                            <div class="col-8">
-                                <h3 class="mb-0">My account</h3>
-                            </div>
-                            <div class="col-4 text-right">
-                                <a href="#!" class="btn btn-sm btn-primary">Settings</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <form>
-                            <h6 class="heading-small text-muted mb-4">User information</h6>
-                            <div class="pl-lg-4">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group focused">
-                                            <label class="form-control-label" for="input-username">Username</label>
-                                            <input type="text" id="input-username"
-                                                   class="form-control form-control-alternative" placeholder="Username"
-                                                   value="lucky.jesse">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label" for="input-email">Email address</label>
-                                            <input type="email" id="input-email"
-                                                   class="form-control form-control-alternative"
-                                                   placeholder="jesse@example.com">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group focused">
-                                            <label class="form-control-label" for="input-first-name">First name</label>
-                                            <input type="text" id="input-first-name"
-                                                   class="form-control form-control-alternative"
-                                                   placeholder="First name" value="Lucky">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group focused">
-                                            <label class="form-control-label" for="input-last-name">Last name</label>
-                                            <input type="text" id="input-last-name"
-                                                   class="form-control form-control-alternative" placeholder="Last name"
-                                                   value="Jesse">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="my-4">
-                            <!-- Address -->
-                            <h6 class="heading-small text-muted mb-4">Contact information</h6>
-                            <div class="pl-lg-4">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group focused">
-                                            <label class="form-control-label" for="input-address">Address</label>
-                                            <input id="input-address" class="form-control form-control-alternative"
-                                                   placeholder="Home Address"
-                                                   value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09" type="text">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="form-group focused">
-                                            <label class="form-control-label" for="input-city">City</label>
-                                            <input type="text" id="input-city"
-                                                   class="form-control form-control-alternative" placeholder="City"
-                                                   value="New York">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="form-group focused">
-                                            <label class="form-control-label" for="input-country">Country</label>
-                                            <input type="text" id="input-country"
-                                                   class="form-control form-control-alternative" placeholder="Country"
-                                                   value="United States">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="form-group">
-                                            <label class="form-control-label" for="input-country">Postal code</label>
-                                            <input type="number" id="input-postal-code"
-                                                   class="form-control form-control-alternative"
-                                                   placeholder="Postal code">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="my-4">
-                            <!-- Description -->
-                            <h6 class="heading-small text-muted mb-4">About me</h6>
-                            <div class="pl-lg-4">
-                                <div class="form-group focused">
-                                    <label>About Me</label>
-                                    <textarea rows="4" class="form-control form-control-alternative"
-                                              placeholder="A few words about you ...">A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+            <div class="l2">
+                <div></div>
+            </div>
+            <div class="l3">
+                <div></div>
+            </div>
+            <div class="l4">
+                <div></div>
             </div>
         </div>
     </div>
 </div>
-<footer class="footer">
-    <div class="row align-items-center justify-content-xl-between">
-        <div class="col-xl-6 m-auto text-center">
+<!-- !Preloader -->
+
+<!-- Left Navigation -->
+<div class="metaportal_fn_leftnav_closer ready"></div>
+<div class="metaportal_fn_leftnav ready">
+    <a class="fn__closer" href="#"><span></span></a>
+    <div class="navbox">
+        <div class="list_holder">
+            <ul class="metaportal_fn_items">
+                <li>
+                    <div class="item">
+                        <a href="https://www.twitch.tv/teamsensivity" target="_blank"></a>
+                        <span class="icon">
+							<img alt="" src="/assets/svg/twitch.svg" width="30px">
+						</span>
+                        <span class="text">Twitch</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <a href="https://discord.com/" target="_blank"></a>
+                        <span class="icon">
+							<img alt="" src="/assets/img/market/discord.png">
+						</span>
+                        <span class="text">Discord</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav_holder">
+
+            <!-- For JS -->
+            <span class="icon">
+				<img alt="" class="fn__svg" src="/assets/svg/down.svg">
+			</span>
+            <!-- For JS -->
+
+            <ul>
+                <li><a><span class="creative_link">Home</span></a></li>
+                <li><a href="collection.html"><span class="creative_link">Dashboard</span></a></li>
+                <li><a href="https://turnier.sensivity.team"><span class="creative_link">TurnierSystem</span></a></li>
+                <li><a href="https://ticketsystem.sensivity.team"><span class="creative_link">TicketSystem</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="info_holder">
             <div class="copyright">
-                <p>Made with <a href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">Argon
-                        Dashboard</a> by Creative Tim</p>
+                <p>Copyright 2022 - Developed by <a href="https://michel929.de" target="_blank">michel929</a></p>
+            </div>
+            <div class="social_icons">
+                <ul>
+                    <li><a href="#"><img alt="" class="fn__svg" src="/assets/svg/social/twitter-1.svg"></a></li>
+                    <li><a href="#"><img alt="" class="fn__svg" src="/assets/svg/social/facebook-1.svg"></a></li>
+                    <li><a href="#"><img alt="" class="fn__svg" src="/assets/svg/social/instagram-1.svg"></a></li>
+                    <li><a href="#"><img alt="" class="fn__svg" src="/assets/svg/social/pinterest-1.svg"></a></li>
+                    <li><a href="#"><img alt="" class="fn__svg" src="/assets/svg/social/behance-1.svg"></a></li>
+                </ul>
             </div>
         </div>
     </div>
-</footer>
+</div>
+<!-- !Left Navigation -->
+
+
+<!-- Searchbox Popup -->
+<div class="metaportal_fn_search_closer"></div>
+<div class="metaportal_fn_searchbox">
+    <div class="container small">
+        <div class="searchbox">
+            <input placeholder="Search here..." type="text">
+            <a href="#">
+                <img alt="" class="fn__svg" src="/assets/svg/loupe.svg">
+            </a>
+        </div>
+    </div>
+</div>
+<!-- !Searchbox Popup -->
+
+<!-- Wallet Popup -->
+<div class="metaportal_fn_wallet_closer ready"></div>
+<div class="metaportal_fn_walletbox ready">
+    <a class="fn__closer" href="#"><span></span></a>
+    <div class="walletbox">
+
+        <div class="title_holder">
+            <h3>Our Server</h3>
+            <p>Wähle deine einen der Server. Wähle aber wähle weise!</p>
+        </div>
+
+        <div class="list_holder">
+            <ul class="metaportal_fn_items">
+                <li>
+                    <div class="item">
+                        <a href="https://discord.com/invite/eC7Jcg7Nzt"></a>
+                        <span class="icon">
+							<img alt="discord" src="/assets/img/market/discord.png">
+						</span>
+                        <span class="text">Discord</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <a href="#"></a>
+                        <span class="icon">
+							<img alt="" src="/assets/svg/minecraft.svg" width="30px">
+						</span>
+                        <span class="text">Minecraft</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!-- !Wallet Popup -->
+
+<!-- Main -->
+<div class="metaportal_fn_main">
+
+    <!-- Mobile Navigation -->
+    <div class="metaportal_fn_mobnav">
+        <div class="mob_top">
+            <div class="social_trigger">
+                <div class="trigger">
+                    <span></span>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank">Fb.</a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank">Tw.</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank">In.</a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank">Ln.</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wallet">
+                <a href="#" class="metaportal_fn_button wallet_opener"><span>Wallet</span></a>
+            </div>
+        </div>
+        <div class="mob_mid">
+            <div class="logo">
+                <a href="index.html"><img src="/assets/img/Logo/logo-transparent.png" width="50px" alt=""></a>
+            </div>
+            <div class="trigger">
+                <span></span>
+            </div>
+        </div>
+        <div class="mob_bot">
+            <ul>
+                <li><a class="creative_link" href="index.html#home">Home</a></li>
+                <li><a class="creative_link" href="index.html#about">About</a></li>
+                <li><a class="creative_link" href="index.html#collection">Collection</a></li>
+                <li><a class="creative_link" href="index.html#news">Blog</a></li>
+                <li><a class="creative_link" href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- !Mobile Navigation -->
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header">
+            <div class="header_in">
+
+                <div class="trigger_logo">
+                    <div class="trigger">
+                        <span></span>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html"><img src="/assets/img/Logo/logo-transparent.png" width="50px" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="nav">
+                    <ul>
+                        <li><a class="creative_link" href="index.html#home">Home</a></li>
+                        <li><a class="creative_link" href="index.html#about">About</a></li>
+                        <li><a class="creative_link" href="index.html#collection">Collection</a></li>
+                        <li><a class="creative_link" href="index.html#news">Blog</a></li>
+                        <li><a class="creative_link" href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="wallet">
+                    <a href="#" class="metaportal_fn_button wallet_opener"><span>Join Our Server</span></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- !Header -->
+
+    <!-- Content -->
+    <div class="metaportal_fn_content">
+
+        <div class="metaportal_fn_mintpage">
+
+            <div class="container small">
+
+                <!-- Mint Top -->
+                <div class="metaportal_fn_mint_top">
+                    <div class="mint_left">
+                        <div class="img">
+                            <div class="img_in" data-bg-img="/assets/img/about/1.jpg">
+                                <img src="img/1x1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mint_right">
+                        <div class="metaportal_fn_share">
+                            <h5 class="label">Share:</h5>
+                            <ul>
+                                <li><a href="#"><img src="/assets/svg/social/twitter-1.svg" alt="" class="fn__svg"></a></li>
+                                <li><a href="#"><img src="/assets/svg/social/facebook-1.svg" alt="" class="fn__svg"></a></li>
+                                <li><a href="#"><img src="/assets/svg/social/instagram-1.svg" alt="" class="fn__svg"></a></li>
+                                <li><a href="#"><img src="/assets/svg/social/pinterest-1.svg" alt="" class="fn__svg"></a></li>
+                                <li><a href="#"><img src="/assets/svg/social/behance-1.svg" alt="" class="fn__svg"></a></li>
+                            </ul>
+                        </div>
+                        <div class="metaportal_fn_breadcrumbs">
+                            <p>
+                                <a href="index.html">Home</a>
+                                <span class="separator">/</span>
+                                <a href="collection.html">Collection</a>
+                                <span class="separator">/</span>
+                                <span class="current">Meta Legends #5675</span>
+                            </p>
+                        </div>
+                        <h3 class="fn__maintitle" data-text="Meta Legends #5675" data-align="left">Meta Legends #5675</h3>
+                        <div class="desc">
+                            <p>Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia. Nunc eu massa dictum, vulputate neque ac, porta mauris. Sed sollicitudin nisi augue, a gravida turpis elementum vel. Curabitur sagittis quis diam et rhoncus. Nam pellentesque imperdiet aliquet. Sed non ante malesuada, ultrices sem at, tempus libero.</p>
+                            <p>Duis eu lorem ut mauris pulvinar auctor. Maecenas et dapibus orci, eleifend euismod justo. Quisque luctus turpis eu tristique feugiat. Praesent ac magna feugiat, interdum lacus ac, interdum dui. Pellentesque id quam quis enim malesuada rutrum. Orci varius natoque penatibus et magnis dis parturient.</p>
+                        </div>
+                        <div class="view_on">
+                            <ul>
+                                <li>
+                                    <span>View On:</span>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="/assets/svg/opensea.svg" alt="" class="fn__svg"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="/assets/svg/portal.svg" alt="" class="fn__svg"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- !Mint Top -->
+
+
+                <!-- Mint Box -->
+                <div class="metaportal_fn_mintbox">
+                    <div class="mint_left">
+                        <div class="mint_title"><span>Public Mint is Live</span></div>
+                        <div class="mint_list">
+                            <ul>
+                                <li>
+                                    <div class="item">
+                                        <h4>Price</h4>
+                                        <h3>2.25 ETH</h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <h4>Remaining</h4>
+                                        <h3>344/999</h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <h4>Quantity</h4>
+                                        <div class="qnt">
+                                            <span class="decrease">-</span>
+                                            <span class="summ" data-price="2.25">2</span>
+                                            <span class="increase">+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <h4>Total Price</h4>
+                                        <h3><span class="total_price">4.5</span> ETH + GAS</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mint_desc">
+                            <a href="#" target="_blank" class="metaportal_fn_button">
+                                <span>Mint Now</span>
+                            </a>
+                            <p>By clicking “MINT NOW” button, you agree to our <a href="#">Terms of Service</a> and our <a href="#">Privacy Policy</a>.</p>
+                        </div>
+                    </div>
+                    <div class="mint_right">
+                        <div class="mright">
+                            <div class="mint_time">
+                                <h4>Public Mint Ends In</h4>
+                                <!--
+                                    There is two types of countdown: due_date (Due Date), ever (Evergreen timer)
+                                        1. 	data-type="due_date"
+                                            In this case you have to change value of data-date. For example:
+                                            data-date="October 13, 2022 12:30:00"
+                                            It will mean that mint will finished at this time
+
+                                        2. 	data-type="ever"
+                                            In this case you have to change values of data-days, data-hours, data-minutes and data-seconds. For example:
+                                            data-days="34"
+                                            data-hours="10"
+                                            data-minutes="20"
+                                            data-seconds="0"
+                                            It will mean that the time expires after this time, but when the page is refreshed, the value will return again. It means, it won't end.
+                                -->
+                                <h3 class="metaportal_fn_countdown" data-type="ever" data-date="October 13, 2022 12:30:00" data-days="34" data-hours="10" data-minutes="20" data-seconds="0">0d: 0h: 0m: 0s</h3>
+                            </div>
+                            <div class="mint_checked">
+                                <p>
+                                    <span class="text">Whitelist:</span>
+                                    <span class="status">Soldout <span class="icon"><img src="svg/checked.svg" alt="" class="fn__svg"></span></span>
+                                </p>
+                                <p>
+                                    <span class="text">Presale:</span>
+                                    <span class="status">Soldout <span class="icon"><img src="svg/checked.svg" alt="" class="fn__svg"></span></span>
+                                </p>
+                            </div>
+                            <div class="mint_info">
+                                <p>You need to pay a GAS fee during minting. We allow max 5 mints per wallet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- !Mint Box -->
+
+                <!-- NFT Categories -->
+                <div class="metaportal_fn_nft_cats">
+                    <ul>
+                        <li>
+                            <div class="item">
+                                <h4 class="parent_category">Clothing</h4>
+                                <h3 class="child_category" title="Black Yukata">Black Yukata</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <h4 class="parent_category">Eyes</h4>
+                                <h3 class="child_category" title="Daydreaming">Daydreaming</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <h4 class="parent_category">Special</h4>
+                                <h3 class="child_category" title="Fireflies, Smoke">Fireflies, Smoke</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <h4 class="parent_category">Type</h4>
+                                <h3 class="child_category" title="Human, Sand">Human, Sand</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <h4 class="parent_category">Mouth</h4>
+                                <h3 class="child_category" title="Not Bad">Not Bad</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <h4 class="parent_category">Neck</h4>
+                                <h3 class="child_category" title="Zen Headphones">Zen Headphones</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <h4 class="parent_category">Eyes</h4>
+                                <h3 class="child_category" title="Striking">Striking</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <h4 class="parent_category">Neck</h4>
+                                <h3 class="child_category" title="Zen Headphones">Zen Headphones</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- !NFT Categories -->
+
+
+
+                <!-- Similar Items -->
+                <div class="metaportal_fn_similar">
+                    <h3 class="fn__maintitle" data-text="Friends">Friends</h3>
+                    <div class="fn_cs_divider">
+                        <div class="divider">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="metaportal_fn_drops">
+                        <ul class="grid">
+                            <li>
+                                <div class="nft__item">
+                                    <div class="img_holder">
+                                        <img src="/assets/img/drops/1.jpg" alt="">
+                                        <a href="nft-single.html" class="full_link"></a>
+                                    </div>
+                                    <div class="title_holder">
+                                        <h3 class="fn_title"><a href="#">Meta Legends #4588</a></h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nft__item">
+                                    <div class="img_holder">
+                                        <img src="/assets/img/drops/2.jpg" alt="">
+                                        <a href="nft-single.html" class="full_link"></a>
+                                    </div>
+                                    <div class="title_holder">
+                                        <h3 class="fn_title"><a href="#">Meta Legends #4587</a></h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nft__item">
+                                    <div class="img_holder">
+                                        <img src="/assets/img/drops/3.jpg" alt="">
+                                        <a href="nft-single.html" class="full_link"></a>
+                                    </div>
+                                    <div class="title_holder">
+                                        <h3 class="fn_title"><a href="#">Meta Legends #4586</a></h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nft__item">
+                                    <div class="img_holder">
+                                        <img src="/assets/img/drops/4.jpg" alt="">
+                                        <a href="nft-single.html" class="full_link"></a>
+                                    </div>
+                                    <div class="title_holder">
+                                        <h3 class="fn_title"><a href="#">Meta Legends #4585</a></h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nft__item">
+                                    <div class="img_holder">
+                                        <img src="/assets/img/drops/5.jpg" alt="">
+                                        <a href="nft-single.html" class="full_link"></a>
+                                    </div>
+                                    <div class="title_holder">
+                                        <h3 class="fn_title"><a href="#">Meta Legends #4584</a></h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nft__item">
+                                    <div class="img_holder">
+                                        <img src="/assets/img/drops/6.jpg" alt="">
+                                        <a href="nft-single.html" class="full_link"></a>
+                                    </div>
+                                    <div class="title_holder">
+                                        <h3 class="fn_title"><a href="#">Meta Legends #4583</a></h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- !Similar Items -->
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="left_part">
+                        <p>Copyright 2022 — Developed by <a href="https://michel929.de" target="_blank">michel929</a></p>
+                    </div>
+                    <div class="right_part">
+                        <ul>
+                            <li><a class="creative_link" href="/impressum.php">Impressum</a></li>
+                            <li><a class="creative_link" href="/datenschutz.php">Datenschutzerklärung</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- !Footer -->
+
+    </div>
+    <!-- !Content -->
+
+
+    <!-- Social -->
+    <div id="social">
+        <div class="social">
+            <h4 class="title">Follow Us:</h4>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank">Fb.</a></li>
+                <li><a href="https://www.twitter.com/" target="_blank">Tw.</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">In.</a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank">Ln.</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- !Social -->
+
+
+    <!-- Totop -->
+    <a href="#" class="metaportal_fn_totop">
+		<span class="totop_inner">
+			<span class="icon">
+				<img src="/assets/svg/down.svg" alt="" class="fn__svg">
+			</span>
+			<span class="text">Scroll To Top</span>
+		</span>
+    </a>
+    <!-- /Totop -->
+
+    <!-- Search Button -->
+    <a href="#" class="metaportal_fn_search">
+		<span class="icon">
+			<img src="/assets/svg/loupe.svg" alt="" class="fn__svg">
+		</span>
+    </a>
+    <!-- !Search Button -->
+
+
+</div>
+<!-- !Main -->
+
+<!-- Scripts -->
+<script type="text/javascript" src="/assets/js/jquery.js?ver=6.0"></script>
+<script type="text/javascript" src="/assets/js/plugins.js?ver=6.0"></script>
+<!--[if lt IE 10]> <script type="text/javascript" src="/assets/js/ie8.js?ver=6.0"></script> <![endif]-->
+<script type="text/javascript" src="/assets/js/init.js?ver=6.0"></script>
+<!-- !Scripts -->
+
 </body>
+</html>

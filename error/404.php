@@ -62,24 +62,24 @@
 <!-- Left Navigation -->
 <div class="metaportal_fn_leftnav_closer ready"></div>
 <div class="metaportal_fn_leftnav ready">
-    <a href="#" class="fn__closer"><span></span></a>
+    <a class="fn__closer" href="#"><span></span></a>
     <div class="navbox">
         <div class="list_holder">
             <ul class="metaportal_fn_items">
                 <li>
                     <div class="item">
-                        <a href="https://opensea.io/" target="_blank"></a>
+                        <a href="https://www.twitch.tv/teamsensivity" target="_blank"></a>
                         <span class="icon">
-							<img src="img/market/opensea.png" alt="">
+							<img alt="" src="assets/svg/twitch.svg" width="30px">
 						</span>
-                        <span class="text">Opensea</span>
+                        <span class="text">Twitch</span>
                     </div>
                 </li>
                 <li>
                     <div class="item">
                         <a href="https://discord.com/" target="_blank"></a>
                         <span class="icon">
-							<img src="img/market/discord.png" alt="">
+							<img alt="" src="assets/img/market/discord.png">
 						</span>
                         <span class="text">Discord</span>
                     </div>
@@ -90,65 +90,29 @@
 
             <!-- For JS -->
             <span class="icon">
-				<img src="svg/down.svg" alt="" class="fn__svg">
+				<img alt="" class="fn__svg" src="assets/svg/down.svg">
 			</span>
             <!-- For JS -->
 
             <ul>
-                <li>
-                    <a href="#">
-                        <span class="creative_link">Home<img src="svg/down.svg" alt="" class="fn__svg"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li><a href="index.html"><span class="creative_link">#1 3D Carousel</span></a></li>
-                        <li><a href="index-2.html"><span class="creative_link">#2 Bended Carousel</span></a></li>
-                        <li><a href="index-3.html"><span class="creative_link">#3 Video Background</span></a></li>
-                        <li><a href="index-4.html"><span class="creative_link">#4 Water Effect</span></a></li>
-                        <li><a href="index-5.html"><span class="creative_link">#5 Simple Carousel</span></a></li>
-                        <li><a href="index-6.html"><span class="creative_link">#6 Fullscreen Slider</span></a></li>
-                    </ul>
+                <li><a><span class="creative_link">Home</span></a></li>
+                <li><a href="collection.html"><span class="creative_link">Dashboard</span></a></li>
+                <li><a href="https://turnier.sensivity.team"><span class="creative_link">TurnierSystem</span></a></li>
+                <li><a href="https://ticketsystem.sensivity.team"><span class="creative_link">TicketSystem</span></a>
                 </li>
-                <li><a href="nft-single.html"><span class="creative_link">Mint Page</span></a></li>
-                <li><a href="collection.html"><span class="creative_link">Collection</span></a></li>
-                <li>
-                    <a href="#">
-                        <span class="creative_link">Pages<img src="svg/down.svg" alt="" class="fn__svg"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li><a href="coming-soon.html"><span class="creative_link">Coming Soon</span></a></li>
-                        <li><a href="404.html"><span class="creative_link">404 Page</span></a></li>
-                        <li><a href="protected.html"><span class="creative_link">Protected Page</span></a></li>
-                        <li><a href="no-results.html"><span class="creative_link">Search No Results</span></a></li>
-                        <li>
-                            <a href="#">
-                                <span class="creative_link">More<img src="svg/down.svg" alt="" class="fn__svg"></span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li><a href="cookies.html"><span class="creative_link">Cookies</span></a></li>
-                                <li><a href="privacy-policy.html"><span class="creative_link">Privacy Policy</span></a>
-                                </li>
-                                <li><a href="terms-conditions.html"><span
-                                                class="creative_link">Terms &amp; Conditions</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="blog.html"><span class="creative_link">Blog</span></a></li>
-                <li><a href="blog-single.html"><span class="creative_link">Blog Single</span></a></li>
             </ul>
         </div>
         <div class="info_holder">
             <div class="copyright">
-                <p>Copyright 2022 - Designed &amp; Developed by <a href="https://themeforest.net/user/frenify/portfolio"
-                                                                   target="_blank">Frenify</a></p>
+                <p>Copyright 2022 - Developed by <a href="https://michel929.de" target="_blank">michel929</a></p>
             </div>
             <div class="social_icons">
                 <ul>
-                    <li><a href="#"><img src="svg/social/twitter-1.svg" alt="" class="fn__svg"></a></li>
-                    <li><a href="#"><img src="svg/social/facebook-1.svg" alt="" class="fn__svg"></a></li>
-                    <li><a href="#"><img src="svg/social/instagram-1.svg" alt="" class="fn__svg"></a></li>
-                    <li><a href="#"><img src="svg/social/pinterest-1.svg" alt="" class="fn__svg"></a></li>
-                    <li><a href="#"><img src="svg/social/behance-1.svg" alt="" class="fn__svg"></a></li>
+                    <li><a href="#"><img alt="" class="fn__svg" src="assets/svg/social/twitter-1.svg"></a></li>
+                    <li><a href="#"><img alt="" class="fn__svg" src="assets/svg/social/facebook-1.svg"></a></li>
+                    <li><a href="#"><img alt="" class="fn__svg" src="assets/svg/social/instagram-1.svg"></a></li>
+                    <li><a href="#"><img alt="" class="fn__svg" src="assets/svg/social/pinterest-1.svg"></a></li>
+                    <li><a href="#"><img alt="" class="fn__svg" src="assets/svg/social/behance-1.svg"></a></li>
                 </ul>
             </div>
         </div>
@@ -162,9 +126,9 @@
 <div class="metaportal_fn_searchbox">
     <div class="container small">
         <div class="searchbox">
-            <input type="text" placeholder="Search here...">
+            <input placeholder="Search here..." type="text">
             <a href="#">
-                <img src="svg/loupe.svg" alt="" class="fn__svg">
+                <img alt="" class="fn__svg" src="assets/svg/loupe.svg">
             </a>
         </div>
     </div>
@@ -174,50 +138,32 @@
 <!-- Wallet Popup -->
 <div class="metaportal_fn_wallet_closer ready"></div>
 <div class="metaportal_fn_walletbox ready">
-    <a href="#" class="fn__closer"><span></span></a>
+    <a class="fn__closer" href="#"><span></span></a>
     <div class="walletbox">
 
         <div class="title_holder">
-            <h3>Connect Wallet</h3>
-            <p>Connect with one of our available wallet providers or create a new one.</p>
+            <h3>Our Server</h3>
+            <p>Wähle deine einen der Server. Wähle aber wähle weise!</p>
         </div>
 
         <div class="list_holder">
             <ul class="metaportal_fn_items">
                 <li>
                     <div class="item">
-                        <a href="#"></a>
+                        <a href="https://discord.com/invite/eC7Jcg7Nzt"></a>
                         <span class="icon">
-							<img src="img/wallet/metamask.png" alt="">
+							<img alt="discord" src="assets/img/market/discord.png">
 						</span>
-                        <span class="text">Metamask</span>
+                        <span class="text">Discord</span>
                     </div>
                 </li>
                 <li>
                     <div class="item">
                         <a href="#"></a>
                         <span class="icon">
-							<img src="img/wallet/coinbase.png" alt="">
+							<img alt="" src="assets/svg/minecraft.svg" width="30px">
 						</span>
-                        <span class="text">Coinbase</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <a href="#"></a>
-                        <span class="icon">
-							<img src="img/wallet/walletconnect.png" alt="">
-						</span>
-                        <span class="text">WalletConnect</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <a href="#"></a>
-                        <span class="icon">
-							<img src="img/wallet/venly.png" alt="">
-						</span>
-                        <span class="text">Venly</span>
+                        <span class="text">Minecraft</span>
                     </div>
                 </li>
             </ul>
@@ -226,7 +172,6 @@
     </div>
 </div>
 <!-- !Wallet Popup -->
-
 <!-- Main -->
 <div class="metaportal_fn_main">
 
@@ -295,7 +240,7 @@
                 </div>
 
                 <div class="wallet">
-                    <a href="#" class="metaportal_fn_button wallet_opener"><span>Connect To Wallet</span></a>
+                    <a href="#" class="metaportal_fn_button wallet_opener"><span>Join Our Server</span></a>
                 </div>
 
             </div>
@@ -332,8 +277,8 @@
             <div class="container">
                 <div class="footer">
                     <div class="left_part">
-                        <p>Copyright 2022 — Designed &amp; Developed by <a
-                                    href="https://themeforest.net/user/frenify/portfolio" target="_blank">Frenify</a>
+                        <p>Copyright 2022 — Developed by <a
+                                    href="https://michel929.de" target="_blank">michel929</a>
                         </p>
                     </div>
                     <div class="right_part">

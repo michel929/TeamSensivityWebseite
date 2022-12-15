@@ -69,7 +69,7 @@
                     <div class="item">
                         <a href="https://www.twitch.tv/teamsensivity" target="_blank"></a>
                         <span class="icon">
-							<img alt="" src="img/market/opensea.png">
+							<img alt="" src="assets/svg/twitch.svg" width="30px">
 						</span>
                         <span class="text">Twitch</span>
                     </div>
@@ -160,27 +160,9 @@
                     <div class="item">
                         <a href="#"></a>
                         <span class="icon">
-							<img alt="" src="assets/img/wallet/coinbase.png">
+							<img alt="" src="assets/svg/minecraft.svg" width="30px">
 						</span>
                         <span class="text">Minecraft</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <a href="#"></a>
-                        <span class="icon">
-							<img alt="" src="assets/img/wallet/walletconnect.png">
-						</span>
-                        <span class="text">WalletConnect</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="item">
-                        <a href="#"></a>
-                        <span class="icon">
-							<img alt="" src="assets/img/wallet/venly.png">
-						</span>
-                        <span class="text">Venly</span>
                     </div>
                 </li>
             </ul>
@@ -551,31 +533,31 @@
                         <div class="item">
                             <div class="item_in">
                                 <div class="img">
-                                    <div class="abs_img" data-bg-img="assets/img/collection/4.jpg"></div>
+                                    <div class="abs_img" data-bg-img="assets/img/TeamLeitung/max.webp"></div>
                                     <img alt="" src="assets/img/1x1.jpg">
                                 </div>
                             </div>
-                            <input type="hidden" value="assets/img/collection/4.jpg">
+                            <input type="hidden" value="assets/img/TeamLeitung/max.webp">
                         </div>
                     </div>
                     <div class="collection_bottom">
                         <div class="item">
                             <div class="item_in">
                                 <div class="img">
-                                    <div class="abs_img" data-bg-img="assets/img/collection/5.jpg"></div>
+                                    <div class="abs_img" data-bg-img="assets/img/TeamLeitung/michel929.png"></div>
                                     <img alt="" src="assets/img/1x1.jpg">
                                 </div>
                             </div>
-                            <input type="hidden" value="assets/img/collection/5.jpg">
+                            <input type="hidden" value="assets/img/TeamLeitung/michel929.png">
                         </div>
                         <div class="item">
                             <div class="item_in">
                                 <div class="img">
-                                    <div class="abs_img" data-bg-img="assets/img/collection/6.jpg"></div>
+                                    <div class="abs_img" data-bg-img="assets/img/TeamLeitung/max.webp"></div>
                                     <img alt="" src="assets/img/1x1.jpg">
                                 </div>
                             </div>
-                            <input type="hidden" value="assets/img/collection/6.jpg">
+                            <input type="hidden" value="assets/img/TeamLeitung/max.webp">
                         </div>
                         <div class="item">
                             <div class="item_in">
@@ -589,11 +571,11 @@
                         <div class="item">
                             <div class="item_in">
                                 <div class="img">
-                                    <div class="abs_img" data-bg-img="assets/img/collection/8.jpg"></div>
+                                    <div class="abs_img" data-bg-img="assets/img/TeamLeitung/P1L4.webp"></div>
                                     <img alt="" src="assets/img/1x1.jpg">
                                 </div>
                             </div>
-                            <input type="hidden" value="assets/img/collection/8.jpg">
+                            <input type="hidden" value="assets/img/TeamLeitung/P1L4.webp">
                         </div>
                     </div>
                 </div>
@@ -635,7 +617,7 @@
                     </div>
                     <div class="bg_overlay">
                         <div class="bg_color"></div>
-                        <div class="bg_image" data-bg-img="assets/img/about/bg.jpg"></div>
+                        <div class="bg_image" data-bg-img="assets/img/mockup/ipad-1.png"></div>
                     </div>
                 </div>
                 <div class="right_part">
@@ -746,7 +728,7 @@
 
                         <!-- Video Shortcode -->
                         <div class="fn_cs_video">
-                            <img alt="" src="assets/img/video/1.jpg">
+                            <img alt="" src="assets/img/mockup/ipad-2.png">
                             <a class="popup-youtube" href="https://www.youtube.com/watch?v=zlMM_2nriG8">
                                 <img alt="" class="fn__svg" src="assets/svg/play.svg">
                             </a>
@@ -996,8 +978,8 @@
                     </div>
                     <div class="right_part">
                         <ul>
-                            <li><a class="creative_link" href="/impressum">Impressum</a></li>
-                            <li><a class="creative_link" href="/datenschutz">Datenschutzerklärung</a></li>
+                            <li><a class="creative_link" href="/impressum.php">Impressum</a></li>
+                            <li><a class="creative_link" href="/datenschutz.php">Datenschutzerklärung</a></li>
                         </ul>
                     </div>
                 </div>

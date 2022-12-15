@@ -1,5 +1,1 @@
 ErrorDocument 404 /error/profile.php
-AuthType Basic
-AuthName "Passwortgeschützter Bereich"
-AuthUserFile C:\Users\Gruenig.M\Documents\Programme\xampp-portable-windows-x64-8.1.6-0-VS16\xampp\htdocs\.htpasswd
-Require valid-user
