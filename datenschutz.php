@@ -100,7 +100,7 @@
                         <span class="creative_link">Home<img alt="" class="fn__svg" src="svg/down.svg"></span>
                     </a>
                     <ul class="sub-menu">
-                        <li><a href="index.html"><span class="creative_link">#1 3D Carousel</span></a></li>
+                        <li><a href="index.php"><span class="creative_link">#1 3D Carousel</span></a></li>
                         <li><a href="index-2.html"><span class="creative_link">#2 Bended Carousel</span></a></li>
                         <li><a href="index-3.html"><span class="creative_link">#3 Video Background</span></a></li>
                         <li><a href="index-4.html"><span class="creative_link">#4 Water Effect</span></a></li>
@@ -128,7 +128,7 @@
                                 <li><a href="privacy-policy.html"><span class="creative_link">Privacy Policy</span></a>
                                 </li>
                                 <li><a href="terms-conditions.html"><span
-                                        class="creative_link">Terms &amp; Conditions</span></a></li>
+                                                class="creative_link">Terms &amp; Conditions</span></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -252,7 +252,7 @@
         </div>
         <div class="mob_mid">
             <div class="logo">
-                <a href="index.html"><img alt="" src="img/logo.png"></a>
+                <a href="index.php"><img alt="" src="img/logo.png"></a>
             </div>
             <div class="trigger">
                 <span></span>
@@ -260,11 +260,11 @@
         </div>
         <div class="mob_bot">
             <ul>
-                <li><a class="creative_link" href="index.html#home">Home</a></li>
-                <li><a class="creative_link" href="index.html#about">About</a></li>
-                <li><a class="creative_link" href="index.html#collection">Collection</a></li>
-                <li><a class="creative_link" href="index.html#news">Blog</a></li>
-                <li><a class="creative_link" href="index.html#contact">Contact</a></li>
+                <li><a class="creative_link" href="index.php#home">Home</a></li>
+                <li><a class="creative_link" href="index.php#about">About</a></li>
+                <li><a class="creative_link" href="index.php#collection">Collection</a></li>
+                <li><a class="creative_link" href="index.php#news">Blog</a></li>
+                <li><a class="creative_link" href="index.php#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -280,17 +280,17 @@
                         <span></span>
                     </div>
                     <div class="logo">
-                        <a href="index.html"><img alt="" src="img/logo.png"></a>
+                        <a href="index.php"><img alt="" src="img/logo.png"></a>
                     </div>
                 </div>
 
                 <div class="nav">
                     <ul>
-                        <li><a class="creative_link" href="index.html#home">Home</a></li>
-                        <li><a class="creative_link" href="index.html#about">About</a></li>
-                        <li><a class="creative_link" href="index.html#collection">Collection</a></li>
-                        <li><a class="creative_link" href="index.html#news">Blog</a></li>
-                        <li><a class="creative_link" href="index.html#contact">Contact</a></li>
+                        <li><a class="creative_link" href="index.php#home">Home</a></li>
+                        <li><a class="creative_link" href="index.php#about">About</a></li>
+                        <li><a class="creative_link" href="index.php#collection">Collection</a></li>
+                        <li><a class="creative_link" href="index.php#news">Blog</a></li>
+                        <li><a class="creative_link" href="index.php#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -516,7 +516,7 @@
                     Datenverarbeitung bleibt vom Widerruf unberührt.</p>
 
                 <p><strong>Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen
-                    Direktwerbung (Art. 21 DSGVO)</strong></p>
+                        Direktwerbung (Art. 21 DSGVO)</strong></p>
                 <p>WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO
                     ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN
                     SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN

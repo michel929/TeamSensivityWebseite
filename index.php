@@ -368,7 +368,7 @@
                     <li>
                         <div class="img_holder">
                             <div class="item_in">
-                                <div class="o_img" data-bg-img="assets/img/drops/9.jpg"></div>
+                                <div class="o_img" data-bg-img="assets/img/TeamLeitung/max.webp"></div>
                                 <img alt="" src="assets/img/1x1.jpg"/>
                             </div>
                         </div>
@@ -412,7 +412,7 @@
 
 
                 <div class="fn_cs_collection_info">
-                    <h3 class="fn__gradient_title">124</h3>
+                    <h3 class="fn__gradient_title">125</h3>
                     <h3 class="fn__maintitle upper" data-text="Total Members">Total Members</h3>
                     <p>There are many variations of passages of lorem ipsum available, but the majority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
@@ -450,10 +450,10 @@
                                 <h3 class="fn__gradient_title">
                                     <span class="prefix"></span>
                                     <span class="fn_cs_counter" data-decimals="0" data-from="0" data-speed="3000"
-                                          data-to="9999">0</span>
+                                          data-to="3">0</span>
                                     <span class="suffix"></span>
                                 </h3>
-                                <p>Total Items</p>
+                                <p>User Online</p>
                                 <div class="divider"></div>
                             </div>
                         </li>
@@ -465,7 +465,7 @@
                                           data-to="3.9">0</span>
                                     <span class="suffix">k+</span>
                                 </h3>
-                                <p>Total Owners</p>
+                                <p>Online Hours</p>
                                 <div class="divider"></div>
                             </div>
                         </li>
@@ -473,11 +473,11 @@
                             <div class="item">
                                 <h3 class="fn__gradient_title">
                                     <span class="prefix"></span>
-                                    <span class="fn_cs_counter" data-decimals="1" data-from="0" data-speed="3000"
-                                          data-to="2.4">0</span>
+                                    <span class="fn_cs_counter" data-decimals="0" data-from="0" data-speed="3000"
+                                          data-to="125">0</span>
                                     <span class="suffix"></span>
                                 </h3>
-                                <p>Floor Price (ETH)</p>
+                                <p>Total Users</p>
                                 <div class="divider"></div>
                             </div>
                         </li>

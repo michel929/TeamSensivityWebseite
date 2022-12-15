@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--[if lt IE 7 ]>
-<html class="ie ie6" lang="de"> <![endif]-->
+<html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]>
-<html class="ie ie7" lang="de"> <![endif]-->
+<html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>
-<html class="ie ie8" lang="de"> <![endif]-->
+<html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en"> <!--<![endif]-->
 
@@ -17,7 +17,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>MetaPortal | 404 Not Found</title>
+    <title>Impressum | Team Sensivity</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,10 +27,10 @@
     <!-- !Google Fonts -->
 
     <!-- Styles -->
-    <link type="text/css" rel="stylesheet" href="/assets/css/plugins.css?ver=6.0"/>
-    <link type="text/css" rel="stylesheet" href="/assets/css/style.css?ver=6.0"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/plugins.css?ver=6.0"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css?ver=6.0"/>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="/assets/js/modernizr.custom.js?ver=6.0"></script> <![endif]-->
+    <script type="text/javascript" src="assets/js/modernizr.custom.js?ver=6.0"></script> <![endif]-->
     <!-- !Styles -->
 
 </head>
@@ -70,7 +70,7 @@
                     <div class="item">
                         <a href="https://opensea.io/" target="_blank"></a>
                         <span class="icon">
-							<img src="img/market/opensea.png" alt="">
+							<img src="assets/img/market/opensea.png" alt="">
 						</span>
                         <span class="text">Opensea</span>
                     </div>
@@ -79,7 +79,7 @@
                     <div class="item">
                         <a href="https://discord.com/" target="_blank"></a>
                         <span class="icon">
-							<img src="img/market/discord.png" alt="">
+							<img src="assets/img/market/discord.png" alt="">
 						</span>
                         <span class="text">Discord</span>
                     </div>
@@ -90,17 +90,17 @@
 
             <!-- For JS -->
             <span class="icon">
-				<img src="svg/down.svg" alt="" class="fn__svg">
+				<img src="assets/svg/down.svg" alt="" class="fn__svg">
 			</span>
             <!-- For JS -->
 
             <ul>
                 <li>
                     <a href="#">
-                        <span class="creative_link">Home<img src="svg/down.svg" alt="" class="fn__svg"></span>
+                        <span class="creative_link">Home<img src="assets/svg/down.svg" alt="" class="fn__svg"></span>
                     </a>
                     <ul class="sub-menu">
-                        <li><a href="index.html"><span class="creative_link">#1 3D Carousel</span></a></li>
+                        <li><a href="index.php"><span class="creative_link">#1 3D Carousel</span></a></li>
                         <li><a href="index-2.html"><span class="creative_link">#2 Bended Carousel</span></a></li>
                         <li><a href="index-3.html"><span class="creative_link">#3 Video Background</span></a></li>
                         <li><a href="index-4.html"><span class="creative_link">#4 Water Effect</span></a></li>
@@ -139,8 +139,7 @@
         </div>
         <div class="info_holder">
             <div class="copyright">
-                <p>Copyright 2022 - Designed &amp; Developed by <a href="https://themeforest.net/user/frenify/portfolio"
-                                                                   target="_blank">Frenify</a></p>
+                <p>Copyright 2022 - Developed by <a href="https://michel929.de" target="_blank">michel929</a></p>
             </div>
             <div class="social_icons">
                 <ul>
@@ -164,7 +163,7 @@
         <div class="searchbox">
             <input type="text" placeholder="Search here...">
             <a href="#">
-                <img src="svg/loupe.svg" alt="" class="fn__svg">
+                <img src="assets/svg/loupe.svg" alt="" class="fn__svg">
             </a>
         </div>
     </div>
@@ -252,7 +251,7 @@
         </div>
         <div class="mob_mid">
             <div class="logo">
-                <a href="index.html"><img src="img/logo.png" alt=""></a>
+                <a href="index.php"><img src="assets/img/logo.png" alt=""></a>
             </div>
             <div class="trigger">
                 <span></span>
@@ -260,11 +259,11 @@
         </div>
         <div class="mob_bot">
             <ul>
-                <li><a class="creative_link" href="index.html#home">Home</a></li>
-                <li><a class="creative_link" href="index.html#about">About</a></li>
-                <li><a class="creative_link" href="index.html#collection">Collection</a></li>
-                <li><a class="creative_link" href="index.html#news">Blog</a></li>
-                <li><a class="creative_link" href="index.html#contact">Contact</a></li>
+                <li><a class="creative_link" href="index.php#home">Home</a></li>
+                <li><a class="creative_link" href="index.php#about">About</a></li>
+                <li><a class="creative_link" href="index.php#collection">Collection</a></li>
+                <li><a class="creative_link" href="index.php#news">Blog</a></li>
+                <li><a class="creative_link" href="index.php#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -280,17 +279,17 @@
                         <span></span>
                     </div>
                     <div class="logo">
-                        <a href="index.html"><img src="/assets/img/Logo/logo-transparent.png" alt="" width="50px"></a>
+                        <a href="index.php"><img src="assets/img/logo.png" alt=""></a>
                     </div>
                 </div>
 
                 <div class="nav">
                     <ul>
-                        <li><a class="creative_link" href="index.html#home">Home</a></li>
-                        <li><a class="creative_link" href="index.html#about">About</a></li>
-                        <li><a class="creative_link" href="index.html#collection">Collection</a></li>
-                        <li><a class="creative_link" href="index.html#news">Blog</a></li>
-                        <li><a class="creative_link" href="index.html#contact">Contact</a></li>
+                        <li><a class="creative_link" href="index.php#home">Home</a></li>
+                        <li><a class="creative_link" href="index.php#about">About</a></li>
+                        <li><a class="creative_link" href="index.php#collection">Collection</a></li>
+                        <li><a class="creative_link" href="index.php#news">Blog</a></li>
+                        <li><a class="creative_link" href="index.php#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -306,25 +305,70 @@
     <!-- Content -->
     <div class="metaportal_fn_content">
 
-        <!-- 404 Not Found -->
-        <div class="metaportal_fn_404">
+        <div class="metaportal_fn_pagetitle">
+
             <div class="container small">
-                <div class="message_holder">
-                    <h3 class="fn__gradient_title">404</h3>
-                    <h4 class="fn__maintitle" data-text="Page Not Found" data-align="center">Page Not Found</h4>
-                    <p>Sorry, but the page you are looking for was moved, removed, renamed or might never existed...</p>
-                    <div class="container-custom">
-                        <form>
-                            <input name="s" type="text">
-                            <a href="#" class="metaportal_fn_button">
-                                <img src="/assets/svg/loupe.svg" alt="" class="fn__svg">
-                            </a>
-                        </form>
-                    </div>
+                <div class="pagetitle">
+                    <h3 class="fn__maintitle big" data-text="Impressum" data-align="center">Impressum</h3>
+                    <p>
+                        <a href="/">Home</a>
+                        <span class="divider">/</span>
+                        <span class="text">Impressum</span>
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- !404 Not Found -->
+
+        <!-- Section Divider -->
+        <div class="fn_cs_section_divider">
+            <div class="divider">
+                <span class="short"></span>
+                <span class="long"></span>
+                <span class="short"></span>
+            </div>
+        </div>
+        <!-- !Section Divider -->
+
+        <div class="metaportal_fn_privacy">
+            <div class="container small">
+
+
+                <h3 class="fn__maintitle" data-text="Angaben gemäß § 5 TMG">Angaben gemäß § 5 TMG</h3>
+                <div class="fn_cs_divider">
+                    <div class="divider">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <p>Michel Grünig<br>
+                    Gersweilerstraße 29<br>
+                    66117 Saarbrücken</p>
+
+
+                <h3 class="fn__maintitle" data-text="Kontakt">Kontakt</h3>
+                <div class="fn_cs_divider">
+                    <div class="divider">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <p>E-Mail: support@sensivity.team<br>
+                    TicketSystem: <a href="">Mehr Infos</a></p>
+
+
+                <h3 class="fn__maintitle" data-text="Redaktionell verantwortlich">Redaktionell verantwortlich</h3>
+                <div class="fn_cs_divider">
+                    <div class="divider">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <p>Michel Grünig<br>
+                    Gersweilerstraße 29<br>
+                    66117 Saarbrücken</p>
+
+            </div>
+        </div>
 
 
         <!-- Footer -->
@@ -332,14 +376,13 @@
             <div class="container">
                 <div class="footer">
                     <div class="left_part">
-                        <p>Copyright 2022 — Designed &amp; Developed by <a
-                                    href="https://themeforest.net/user/frenify/portfolio" target="_blank">Frenify</a>
+                        <p>Copyright 2022 — Developed by <a href="https://michel929.de" target="_blank">michel929</a>
                         </p>
                     </div>
                     <div class="right_part">
                         <ul>
-                            <li><a class="creative_link" href="/impressum.php">Impressum</a></li>
-                            <li><a class="creative_link" href="/datenschutz.php">Datenschutzerklärung</a></li>
+                            <li><a class="creative_link" href="/impressum">Impressum</a></li>
+                            <li><a class="creative_link" href="/datenschutz">Datenschutzerklärung</a></li>
                         </ul>
                     </div>
                 </div>
@@ -370,7 +413,7 @@
     <a href="#" class="metaportal_fn_totop">
 		<span class="totop_inner">
 			<span class="icon">
-				<img src="/assets/svg/down.svg" alt="" class="fn__svg">
+				<img src="assets/svg/down.svg" alt="" class="fn__svg">
 			</span>
 			<span class="text">Scroll To Top</span>
 		</span>
@@ -380,7 +423,7 @@
     <!-- Search Button -->
     <a href="#" class="metaportal_fn_search">
 		<span class="icon">
-			<img src="/assets/svg/loupe.svg" alt="" class="fn__svg">
+			<img src="assets/svg/loupe.svg" alt="" class="fn__svg">
 		</span>
     </a>
     <!-- !Search Button -->
@@ -390,11 +433,11 @@
 <!-- !Main -->
 
 <!-- Scripts -->
-<script type="text/javascript" src="/assets/js/jquery.js?ver=6.0"></script>
-<script type="text/javascript" src="/assets/js/plugins.js?ver=6.0"></script>
+<script type="text/javascript" src="assets/js/jquery.js?ver=6.0"></script>
+<script type="text/javascript" src="assets/js/plugins.js?ver=6.0"></script>
 <!--[if lt IE 10]>
-<script type="text/javascript" src="/assets/js/ie8.js?ver=6.0"></script> <![endif]-->
-<script type="text/javascript" src="/assets/js/init.js?ver=6.0"></script>
+<script type="text/javascript" src="assets/js/ie8.js?ver=6.0"></script> <![endif]-->
+<script type="text/javascript" src="assets/js/init.js?ver=6.0"></script>
 <!-- !Scripts -->
 
 </body>

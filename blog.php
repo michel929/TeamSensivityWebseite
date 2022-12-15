@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--[if lt IE 7 ]>
-<html class="ie ie6" lang="de"> <![endif]-->
+<html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]>
-<html class="ie ie7" lang="de"> <![endif]-->
+<html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>
-<html class="ie ie8" lang="de"> <![endif]-->
+<html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en"> <!--<![endif]-->
 
@@ -12,12 +12,12 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <meta name="description" content="TeamSensivity">
-    <meta name="author" content="michel929">
+    <meta name="description" content="MetaPortal">
+    <meta name="author" content="Frenify">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>MetaPortal | 404 Not Found</title>
+    <title>MetaPortal | Blog</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,10 +27,10 @@
     <!-- !Google Fonts -->
 
     <!-- Styles -->
-    <link type="text/css" rel="stylesheet" href="/assets/css/plugins.css?ver=6.0"/>
-    <link type="text/css" rel="stylesheet" href="/assets/css/style.css?ver=6.0"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/plugins.css?ver=6.0"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css?ver=6.0"/>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="/assets/js/modernizr.custom.js?ver=6.0"></script> <![endif]-->
+    <script type="text/javascript" src="assets/js/modernizr.custom.js?ver=6.0"></script> <![endif]-->
     <!-- !Styles -->
 
 </head>
@@ -280,7 +280,7 @@
                         <span></span>
                     </div>
                     <div class="logo">
-                        <a href="index.html"><img src="/assets/img/Logo/logo-transparent.png" alt="" width="50px"></a>
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
                     </div>
                 </div>
 
@@ -306,25 +306,144 @@
     <!-- Content -->
     <div class="metaportal_fn_content">
 
-        <!-- 404 Not Found -->
-        <div class="metaportal_fn_404">
+        <div class="metaportal_fn_pagetitle">
+
             <div class="container small">
-                <div class="message_holder">
-                    <h3 class="fn__gradient_title">404</h3>
-                    <h4 class="fn__maintitle" data-text="Page Not Found" data-align="center">Page Not Found</h4>
-                    <p>Sorry, but the page you are looking for was moved, removed, renamed or might never existed...</p>
-                    <div class="container-custom">
-                        <form>
-                            <input name="s" type="text">
-                            <a href="#" class="metaportal_fn_button">
-                                <img src="/assets/svg/loupe.svg" alt="" class="fn__svg">
-                            </a>
-                        </form>
-                    </div>
+                <div class="pagetitle">
+                    <h3 class="fn__maintitle big" data-text="Blog Articles" data-align="center">Blog Articles</h3>
+                    <p>
+                        <a href="index.html">Home</a>
+                        <span class="divider">/</span>
+                        <span class="text">Blog Articles</span>
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- !404 Not Found -->
+
+        <!-- Section Divider -->
+        <div class="fn_cs_section_divider">
+            <div class="divider">
+                <span class="short"></span>
+                <span class="long"></span>
+                <span class="short"></span>
+            </div>
+        </div>
+        <!-- !Section Divider -->
+
+        <div class="metaportal_fn_bloglist">
+            <div class="container small">
+                <div class="bloglist">
+                    <ul class="fn-isotope">
+                        <li class="isotope-item">
+                            <div class="blog__item">
+                                <div class="counter">
+                                    <span class="cc"><span>01</span></span>
+                                </div>
+                                <div class="meta">
+                                    <p>August 09, 2022 / MetaVerse / 4 Comments</p>
+                                </div>
+                                <div class="title">
+                                    <h3><a href="blog-single.html">Reasons Why People Use Discord</a></h3>
+                                </div>
+                                <div class="image">
+                                    <a href="blog-single.html">
+                                        <img src="assets/img/blog/1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="read_more">
+                                    <a href="blog-single.html"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="isotope-item">
+                            <div class="blog__item">
+                                <div class="counter">
+                                    <span class="cc"><span>02</span></span>
+                                </div>
+                                <div class="meta">
+                                    <p>August 09, 2022 / MetaVerse / 4 Comments</p>
+                                </div>
+                                <div class="title">
+                                    <h3><a href="blog-single.html">Rewards for the Zoidster NFTs</a></h3>
+                                </div>
+                                <div class="image">
+                                    <a href="blog-single.html">
+                                        <img src="assets/img/blog/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="read_more">
+                                    <a href="blog-single.html"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="isotope-item">
+                            <div class="blog__item">
+                                <div class="counter">
+                                    <span class="cc"><span>03</span></span>
+                                </div>
+                                <div class="meta">
+                                    <p>August 09, 2022 / MetaVerse / 4 Comments</p>
+                                </div>
+                                <div class="title">
+                                    <h3><a href="blog-single.html">A Behind-the-Scenes Look: How the BRAWL-O-SEUM NFT
+                                            Was Created</a></h3>
+                                </div>
+                                <div class="image">
+                                    <a href="blog-single.html">
+                                        <img src="assets/img/blog/3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="read_more">
+                                    <a href="blog-single.html"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="isotope-item">
+                            <div class="blog__item">
+                                <div class="counter">
+                                    <span class="cc"><span>04</span></span>
+                                </div>
+                                <div class="meta">
+                                    <p>August 09, 2022 / MetaVerse / 4 Comments</p>
+                                </div>
+                                <div class="title">
+                                    <h3><a href="blog-single.html">Land Redemption Day is coming!</a></h3>
+                                </div>
+                                <div class="image">
+                                    <a href="blog-single.html">
+                                        <img src="assets/img/blog/4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="read_more">
+                                    <a href="blog-single.html"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="metaportal_fn_pagination">
+                    <ul>
+                        <li>
+                            <span>1</span>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <span>...</span>
+                        </li>
+                        <li>
+                            <a href="#">77</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
 
 
         <!-- Footer -->
@@ -338,8 +457,9 @@
                     </div>
                     <div class="right_part">
                         <ul>
-                            <li><a class="creative_link" href="/impressum.php">Impressum</a></li>
-                            <li><a class="creative_link" href="/datenschutz.php">Datenschutzerklärung</a></li>
+                            <li><a class="creative_link" href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a class="creative_link" href="cookies.html">Cookies</a></li>
+                            <li><a class="creative_link" href="terms-conditions.html">Terms &amp; Conditions</a></li>
                         </ul>
                     </div>
                 </div>
@@ -370,7 +490,7 @@
     <a href="#" class="metaportal_fn_totop">
 		<span class="totop_inner">
 			<span class="icon">
-				<img src="/assets/svg/down.svg" alt="" class="fn__svg">
+				<img src="svg/down.svg" alt="" class="fn__svg">
 			</span>
 			<span class="text">Scroll To Top</span>
 		</span>
@@ -380,7 +500,7 @@
     <!-- Search Button -->
     <a href="#" class="metaportal_fn_search">
 		<span class="icon">
-			<img src="/assets/svg/loupe.svg" alt="" class="fn__svg">
+			<img src="svg/loupe.svg" alt="" class="fn__svg">
 		</span>
     </a>
     <!-- !Search Button -->
@@ -390,11 +510,11 @@
 <!-- !Main -->
 
 <!-- Scripts -->
-<script type="text/javascript" src="/assets/js/jquery.js?ver=6.0"></script>
-<script type="text/javascript" src="/assets/js/plugins.js?ver=6.0"></script>
+<script type="text/javascript" src="assets/js/jquery.js?ver=6.0"></script>
+<script type="text/javascript" src="assets/js/plugins.js?ver=6.0"></script>
 <!--[if lt IE 10]>
-<script type="text/javascript" src="/assets/js/ie8.js?ver=6.0"></script> <![endif]-->
-<script type="text/javascript" src="/assets/js/init.js?ver=6.0"></script>
+<script type="text/javascript" src="assets/js/ie8.js?ver=6.0"></script> <![endif]-->
+<script type="text/javascript" src="assets/js/init.js?ver=6.0"></script>
 <!-- !Scripts -->
 
 </body>
