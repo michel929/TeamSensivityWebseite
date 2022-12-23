@@ -33,8 +33,21 @@
     <script type="text/javascript" src="assets/js/modernizr.custom.js?ver=6.0"></script> <![endif]-->
     <!-- !Styles -->
 
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="https://sensivity.team/assets/img/Logo/logo-transparent.png"/>
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="https://sensivity.team/assets/img/Logo/logo-transparent.png"/>
 </head>
 
+<?php
+require_once("inc/config.inc.php");
+
+$stmt = $pdo->query("SELECT * FROM bot");
+while ($row = $stmt->fetch()) {
+    $user_count = $row["user_count"];
+    $user_online = $row["user_online"];
+}
+?>
 <body>
 
 <!-- Preloader -->
@@ -394,7 +407,7 @@
 
 
                 <div class="fn_cs_collection_info">
-                    <h3 class="fn__gradient_title">125</h3>
+                    <h3 class="fn__gradient_title"><?php echo $user_count; ?></h3>
                     <h3 class="fn__maintitle upper" data-text="Total Members">Total Members</h3>
                     <p>There are many variations of passages of lorem ipsum available, but the majority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
@@ -432,7 +445,7 @@
                                 <h3 class="fn__gradient_title">
                                     <span class="prefix"></span>
                                     <span class="fn_cs_counter" data-decimals="0" data-from="0" data-speed="3000"
-                                          data-to="3">0</span>
+                                          data-to="<?php echo $user_online; ?>">0</span>
                                     <span class="suffix"></span>
                                 </h3>
                                 <p>User Online</p>
@@ -456,7 +469,7 @@
                                 <h3 class="fn__gradient_title">
                                     <span class="prefix"></span>
                                     <span class="fn_cs_counter" data-decimals="0" data-from="0" data-speed="3000"
-                                          data-to="125">0</span>
+                                          data-to="<?php echo $user_count; ?>">0</span>
                                     <span class="suffix"></span>
                                 </h3>
                                 <p>Total Users</p>

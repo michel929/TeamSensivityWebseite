@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1c519e2-6d64-4762-aeef-6e1b42482955" name="Changes" comment="" />
+    <list default="true" id="d1c519e2-6d64-4762-aeef-6e1b42482955" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/svg/checked.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/svg/checked.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +68,8 @@
       <workItem from="1671088866691" duration="9295000" />
       <workItem from="1671108016695" duration="3264000" />
       <workItem from="1671196120950" duration="306000" />
+      <workItem from="1671434374471" duration="19000" />
+      <workItem from="1671798987862" duration="25000" />
     </task>
     <servers />
   </component>
