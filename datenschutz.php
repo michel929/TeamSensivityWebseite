@@ -134,7 +134,7 @@
                     </ul>
                 </li>
                 <li><a href="blog.html"><span class="creative_link">Blog</span></a></li>
-                <li><a href="blog-single.html"><span class="creative_link">Blog Single</span></a></li>
+                <li><a href="blog-single.php"><span class="creative_link">Blog Single</span></a></li>
             </ul>
         </div>
         <div class="info_holder">
