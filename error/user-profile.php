@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="de"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="de"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="de"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="de"> <!--<![endif]-->
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="de"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="de"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="de"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="de"> <!--<![endif]-->
 
 <head>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
     <meta name="description" content="TeamSensivity">
     <meta name="author" content="michel929">
@@ -18,17 +22,30 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
     <!-- !Google Fonts -->
 
     <!-- Styles -->
-    <link type="text/css" rel="stylesheet" href="/assets/css/plugins.css?ver=6.0" />
-    <link type="text/css" rel="stylesheet" href="/assets/css/style.css?ver=6.0" />
-    <!--[if lt IE 9]> <script type="text/javascript" src="/assets/js/modernizr.custom.js?ver=6.0"></script> <![endif]-->
+    <link type="text/css" rel="stylesheet" href="/assets/css/plugins.css?ver=6.0"/>
+    <link type="text/css" rel="stylesheet" href="/assets/css/style.css?ver=6.0"/>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/js/modernizr.custom.js?ver=6.0"></script> <![endif]-->
     <!-- !Styles -->
 
 </head>
+<?php
+$path = $_SERVER['REQUEST_URI'];
+$path = str_replace("/", "", $path);
 
+$stmt = $pdo->query("SELECT * FROM users");
+while ($row = $stmt->fetch()) {
+    if ($path == $row["website_url"]) {
+        $discord_username = $row["discord_username"];
+        $discord_pb = $row["discord_pb"];
+    }
+}
+?>
 <body>
 
 
@@ -254,7 +271,7 @@
                 <div class="metaportal_fn_mint_top">
                     <div class="mint_left">
                         <div class="img">
-                            <div class="img_in" data-bg-img="/assets/img/about/1.jpg">
+                            <div class="img_in" data-bg-img="<?php echo $discord_pb; ?>?size=1024">
                                 <img src="img/1x1.jpg" alt="">
                             </div>
                         </div>
@@ -263,26 +280,39 @@
                         <div class="metaportal_fn_share">
                             <h5 class="label">Share:</h5>
                             <ul>
-                                <li><a href="#"><img src="/assets/svg/social/twitter-1.svg" alt="" class="fn__svg"></a></li>
-                                <li><a href="#"><img src="/assets/svg/social/facebook-1.svg" alt="" class="fn__svg"></a></li>
-                                <li><a href="#"><img src="/assets/svg/social/instagram-1.svg" alt="" class="fn__svg"></a></li>
-                                <li><a href="#"><img src="/assets/svg/social/pinterest-1.svg" alt="" class="fn__svg"></a></li>
-                                <li><a href="#"><img src="/assets/svg/social/behance-1.svg" alt="" class="fn__svg"></a></li>
+                                <li><a href="#"><img src="/assets/svg/social/twitter-1.svg" alt="" class="fn__svg"></a>
+                                </li>
+                                <li><a href="#"><img src="/assets/svg/social/facebook-1.svg" alt="" class="fn__svg"></a>
+                                </li>
+                                <li><a href="#"><img src="/assets/svg/social/instagram-1.svg" alt=""
+                                                     class="fn__svg"></a></li>
+                                <li><a href="#"><img src="/assets/svg/social/pinterest-1.svg" alt=""
+                                                     class="fn__svg"></a></li>
+                                <li><a href="#"><img src="/assets/svg/social/behance-1.svg" alt="" class="fn__svg"></a>
+                                </li>
                             </ul>
                         </div>
                         <div class="metaportal_fn_breadcrumbs">
                             <p>
                                 <a href="index.html">Home</a>
                                 <span class="separator">/</span>
-                                <a href="collection.html">Collection</a>
+                                <a href="collection.html">User</a>
                                 <span class="separator">/</span>
-                                <span class="current">Meta Legends #5675</span>
+                                <span class="current"><?php echo $discord_username; ?></span>
                             </p>
                         </div>
-                        <h3 class="fn__maintitle" data-text="Meta Legends #5675" data-align="left">Meta Legends #5675</h3>
+                        <h3 class="fn__maintitle" data-text="<?php echo $discord_username; ?>"
+                            data-align="left"><?php echo $discord_username; ?></h3>
                         <div class="desc">
-                            <p>Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia. Nunc eu massa dictum, vulputate neque ac, porta mauris. Sed sollicitudin nisi augue, a gravida turpis elementum vel. Curabitur sagittis quis diam et rhoncus. Nam pellentesque imperdiet aliquet. Sed non ante malesuada, ultrices sem at, tempus libero.</p>
-                            <p>Duis eu lorem ut mauris pulvinar auctor. Maecenas et dapibus orci, eleifend euismod justo. Quisque luctus turpis eu tristique feugiat. Praesent ac magna feugiat, interdum lacus ac, interdum dui. Pellentesque id quam quis enim malesuada rutrum. Orci varius natoque penatibus et magnis dis parturient.</p>
+                            <p>Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim
+                                tincidunt, sit amet facilisis massa laoreet. Integer mollis nec sapien eu lacinia. Nunc
+                                eu massa dictum, vulputate neque ac, porta mauris. Sed sollicitudin nisi augue, a
+                                gravida turpis elementum vel. Curabitur sagittis quis diam et rhoncus. Nam pellentesque
+                                imperdiet aliquet. Sed non ante malesuada, ultrices sem at, tempus libero.</p>
+                            <p>Duis eu lorem ut mauris pulvinar auctor. Maecenas et dapibus orci, eleifend euismod
+                                justo. Quisque luctus turpis eu tristique feugiat. Praesent ac magna feugiat, interdum
+                                lacus ac, interdum dui. Pellentesque id quam quis enim malesuada rutrum. Orci varius
+                                natoque penatibus et magnis dis parturient.</p>
                         </div>
                         <div class="view_on">
                             <ul>
@@ -342,7 +372,8 @@
                             <a href="#" target="_blank" class="metaportal_fn_button">
                                 <span>Mint Now</span>
                             </a>
-                            <p>By clicking “MINT NOW” button, you agree to our <a href="#">Terms of Service</a> and our <a href="#">Privacy Policy</a>.</p>
+                            <p>By clicking “MINT NOW” button, you agree to our <a href="#">Terms of Service</a> and our
+                                <a href="#">Privacy Policy</a>.</p>
                         </div>
                     </div>
                     <div class="mint_right">
@@ -364,16 +395,20 @@
                                             data-seconds="0"
                                             It will mean that the time expires after this time, but when the page is refreshed, the value will return again. It means, it won't end.
                                 -->
-                                <h3 class="metaportal_fn_countdown" data-type="ever" data-date="October 13, 2022 12:30:00" data-days="34" data-hours="10" data-minutes="20" data-seconds="0">0d: 0h: 0m: 0s</h3>
+                                <h3 class="metaportal_fn_countdown" data-type="ever"
+                                    data-date="October 13, 2022 12:30:00" data-days="34" data-hours="10"
+                                    data-minutes="20" data-seconds="0">0d: 0h: 0m: 0s</h3>
                             </div>
                             <div class="mint_checked">
                                 <p>
                                     <span class="text">Whitelist:</span>
-                                    <span class="status">Soldout <span class="icon"><img src="svg/checked.svg" alt="" class="fn__svg"></span></span>
+                                    <span class="status">Soldout <span class="icon"><img src="svg/checked.svg" alt=""
+                                                                                         class="fn__svg"></span></span>
                                 </p>
                                 <p>
                                     <span class="text">Presale:</span>
-                                    <span class="status">Soldout <span class="icon"><img src="svg/checked.svg" alt="" class="fn__svg"></span></span>
+                                    <span class="status">Soldout <span class="icon"><img src="svg/checked.svg" alt=""
+                                                                                         class="fn__svg"></span></span>
                                 </p>
                             </div>
                             <div class="mint_info">
@@ -438,7 +473,6 @@
                     </ul>
                 </div>
                 <!-- !NFT Categories -->
-
 
 
                 <!-- Similar Items -->
@@ -535,7 +569,8 @@
             <div class="container">
                 <div class="footer">
                     <div class="left_part">
-                        <p>Copyright 2022 — Developed by <a href="https://michel929.de" target="_blank">michel929</a></p>
+                        <p>Copyright 2022 — Developed by <a href="https://michel929.de" target="_blank">michel929</a>
+                        </p>
                     </div>
                     <div class="right_part">
                         <ul>
@@ -593,7 +628,8 @@
 <!-- Scripts -->
 <script type="text/javascript" src="/assets/js/jquery.js?ver=6.0"></script>
 <script type="text/javascript" src="/assets/js/plugins.js?ver=6.0"></script>
-<!--[if lt IE 10]> <script type="text/javascript" src="/assets/js/ie8.js?ver=6.0"></script> <![endif]-->
+<!--[if lt IE 10]>
+<script type="text/javascript" src="/assets/js/ie8.js?ver=6.0"></script> <![endif]-->
 <script type="text/javascript" src="/assets/js/init.js?ver=6.0"></script>
 <!-- !Scripts -->
 
