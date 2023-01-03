@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1c519e2-6d64-4762-aeef-6e1b42482955" name="Changes" comment="" />
+    <list default="true" id="d1c519e2-6d64-4762-aeef-6e1b42482955" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bot/getGroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +66,7 @@
       <workItem from="1671088866691" duration="9295000" />
       <workItem from="1671108016695" duration="3264000" />
       <workItem from="1672319700054" duration="2000" />
+      <workItem from="1672732163701" duration="501000" />
     </task>
     <servers />
   </component>
