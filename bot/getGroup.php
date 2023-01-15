@@ -14,5 +14,11 @@ if (isset($_GET["steam_id"])) {
             $steam_verify = 1;
         }
     }
+
+    if($steam_verify == 1){
+        echo 1;
+    }else {
+        echo 0;
+    }
 }
 ?>

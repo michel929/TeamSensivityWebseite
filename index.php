@@ -14,7 +14,7 @@ $hours = 0;
 
 $stmt = $pdo->query("SELECT * FROM online");
 while ($row = $stmt->fetch()) {
-    $hours = $row["gesamt"] + $hours;
+    $hours = $row["minuten"] + $hours;
 }
 ?>
 <body>
