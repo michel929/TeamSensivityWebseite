@@ -1,5 +1,5 @@
 <?php
-include "templates/head.html";
+include "templates/head.php";
 
 require_once("inc/config.inc.php");
 require_once("inc/functions.inc.php");
@@ -31,7 +31,7 @@ include "templates/header.html";
 
         <!-- BG -->
         <div class="video_bg">
-            <video autoplay loop muted src="assets/img/bg.mp4"></video>
+            <video autoplay loop muted src="assets/img/bg.mp4" alt="Video BG"></video>
         </div>
         <!-- !BG -->
 
@@ -52,7 +52,7 @@ include "templates/header.html";
                     <div class="img_holder">
                         <div class="item_in">
                             <div class="o_img" data-bg-img="assets/img/TeamLeitung/michel929.png"></div>
-                            <img alt="" src="assets/img/1x1.jpg"/>
+                            <img alt="michel929" src="assets/img/1x1.jpg"/>
                         </div>
                     </div>
                 </li>
@@ -60,7 +60,7 @@ include "templates/header.html";
                     <div class="img_holder">
                         <div class="item_in">
                             <div class="o_img" data-bg-img="assets/img/TeamLeitung/zzzz.jpg"></div>
-                            <img alt="" src="assets/img/1x1.jpg"/>
+                            <img alt="zzzz" src="assets/img/1x1.jpg"/>
                         </div>
                     </div>
                 </li>
@@ -68,7 +68,7 @@ include "templates/header.html";
                     <div class="img_holder">
                         <div class="item_in">
                             <div class="o_img" data-bg-img="assets/img/TeamLeitung/jangerlp.png"></div>
-                            <img alt="" src="assets/img/1x1.jpg"/>
+                            <img alt="jangerlp" src="assets/img/1x1.jpg"/>
                         </div>
                     </div>
                 </li>
@@ -76,7 +76,7 @@ include "templates/header.html";
                     <div class="img_holder">
                         <div class="item_in">
                             <div class="o_img" data-bg-img="assets/img/TeamLeitung/Samuel.webp"></div>
-                            <img alt="" src="assets/img/1x1.jpg"/>
+                            <img alt="samuel" src="assets/img/1x1.jpg"/>
                         </div>
                     </div>
                 </li>
@@ -84,7 +84,7 @@ include "templates/header.html";
                     <div class="img_holder">
                         <div class="item_in">
                             <div class="o_img" data-bg-img="assets/img/TeamLeitung/P1L4.webp"></div>
-                            <img alt="" src="assets/img/1x1.jpg"/>
+                            <img alt="P1L4" src="assets/img/1x1.jpg"/>
                         </div>
                     </div>
                 </li>
@@ -92,23 +92,23 @@ include "templates/header.html";
                     <div class="img_holder">
                         <div class="item_in">
                             <div class="o_img" data-bg-img="assets/img/TeamLeitung/Lorenz.webp"></div>
-                            <img alt="" src="assets/img/1x1.jpg"/>
+                            <img alt="Striker" src="assets/img/1x1.jpg"/>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="img_holder">
                         <div class="item_in">
-                            <div class="o_img" data-bg-img="assets/img/drops/6.jpg"></div>
-                            <img alt="" src="assets/img/1x1.jpg"/>
+                            <div class="o_img" data-bg-img="assets/img/TeamLeitung/paul.png"></div>
+                            <img alt="Paul" src="assets/img/1x1.jpg"/>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="img_holder">
                         <div class="item_in">
-                            <div class="o_img" data-bg-img="assets/img/drops/7.jpg"></div>
-                            <img alt="" src="assets/img/1x1.jpg"/>
+                            <div class="o_img" data-bg-img="assets/img/TeamLeitung/juicy.png"></div>
+                            <img alt="Juicy" src="assets/img/1x1.jpg"/>
                         </div>
                     </div>
                 </li>
@@ -116,7 +116,7 @@ include "templates/header.html";
                     <div class="img_holder">
                         <div class="item_in">
                             <div class="o_img" data-bg-img="assets/img/TeamLeitung/Sam.webp"></div>
-                            <img alt="" src="assets/img/1x1.jpg"/>
+                            <img alt="Sam" src="assets/img/1x1.jpg"/>
                         </div>
                     </div>
                 </li>
@@ -124,7 +124,7 @@ include "templates/header.html";
                     <div class="img_holder">
                         <div class="item_in">
                             <div class="o_img" data-bg-img="assets/img/TeamLeitung/max.webp"></div>
-                            <img alt="" src="assets/img/1x1.jpg"/>
+                            <img alt="max" src="assets/img/1x1.jpg"/>
                         </div>
                     </div>
                 </li>
@@ -152,16 +152,14 @@ include "templates/header.html";
                         </div>
                     </div>
                     <div class="desc">
-                        <p>As the first hero of the Meta Legends, collection has over 9,999 unique skins drawn from
-                            the different missions and challenges he faced throughout his life.</p>
-                        <p>The artwork has been hand-drawned by Robert Green in the traditional anime style and
-                            composited by Layla Efiyo.</p>
+                        <p>Wir sind eine kleine Community, bei der jeder Wilkommen ist... Hier werden sogut wie alle Spiele gezockt, aber auch mal einfach nur gequatscht, oder Filme zusammen geschaut.</p>
+                        <p>Also daher du bist Herzlich Willkommen zu joinen und ein Teil unserer Community zu werden.</p>
                     </div>
                     <a class="metaportal_fn_button" href="https://discord.com/invite/eC7Jcg7Nzt"
                        target="_blank"><span>Find us On Discord</span></a>
                 </div>
                 <div class="about_right">
-                    <div class="abs_img" data-bg-img="assets/img/Logo/logo-transparent.png"></div>
+                    <div class="abs_img" data-bg-img="assets/img/Logo/logo-transparent.png" alt="Logo"></div>
                 </div>
             </div>
 
@@ -175,9 +173,9 @@ include "templates/header.html";
         </div>
 
         <div class="fn_cs_video bg">
-            <div class="hero" data-bg-img="assets/img/Logo/header.png"></div>
+            <div class="hero" data-bg-img="assets/img/Logo/header.png" alt="hero BG"></div>
             <a class="popup-youtube" href="https://www.youtube.com/watch?v=L28UZqMzVN4">
-                <img alt="" class="fn__svg" src="assets/svg/play.svg">
+                <img alt="" class="fn__svg" src="assets/svg/play.svg" alt="play">
             </a>
         </div>
 
@@ -186,9 +184,7 @@ include "templates/header.html";
             <div class="fn_cs_join">
                 <div class="join_in">
                     <h3 class="fn__maintitle upper" data-text="Join Our Community">Join Our Community</h3>
-                    <p>There are many variations of passages of lorem ipsum available, but the majority have
-                        suffered alteration in some form, by injected humour, or randomised words which don't look
-                        even slightly believable.</p>
+                    <p>Hier ist sogut wie immer jemand Online, joine einfach und lern neue Leute kennen. Spiele gemeinsam statt mit "Randoms", wir alle kennen Sie ahhhhh!</p>
                     <div class="buttons">
                         <a class="metaportal_fn_button" href="https://discord.com/invite/eC7Jcg7Nzt"
                            target="_blank"><span>FInd us on Discord</span></a>
@@ -277,17 +273,17 @@ include "templates/header.html";
                     <div class="item">
                         <div class="item_in">
                             <div class="img">
-                                <div class="abs_img" data-bg-img="assets/img/collection/1.jpg"></div>
-                                <img alt="" src="assets/img/1x1.jpg">
+                                <div class="abs_img" data-bg-img="assets/img/TeamLeitung/P1L4.webp"></div>
+                                <img alt="Placeholder" src="assets/img/1x1.jpg">
                             </div>
                         </div>
-                        <input type="hidden" value="img/collection/1.jpg">
+                        <input type="hidden" value="assets/img/TeamLeitung/P1L4.webp">
                     </div>
                     <div class="item">
                         <div class="item_in">
                             <div class="img">
                                 <div class="abs_img" data-bg-img="assets/img/TeamLeitung/P1L4.webp"></div>
-                                <img alt="" src="assets/img/1x1.jpg">
+                                <img alt="P1L4" src="assets/img/1x1.jpg">
                             </div>
                         </div>
                         <input type="hidden" value="assets/img/TeamLeitung/P1L4.webp">
@@ -296,7 +292,7 @@ include "templates/header.html";
                         <div class="item_in">
                             <div class="img">
                                 <div class="abs_img" data-bg-img="assets/img/TeamLeitung/michel929.png"></div>
-                                <img alt="" src="assets/img/1x1.jpg">
+                                <img alt="michel929" src="assets/img/1x1.jpg">
                             </div>
                         </div>
                         <input type="hidden" value="assets/img/TeamLeitung/michel929.png">
@@ -305,7 +301,7 @@ include "templates/header.html";
                         <div class="item_in">
                             <div class="img">
                                 <div class="abs_img" data-bg-img="assets/img/TeamLeitung/max.webp"></div>
-                                <img alt="" src="assets/img/1x1.jpg">
+                                <img alt="max" src="assets/img/1x1.jpg">
                             </div>
                         </div>
                         <input type="hidden" value="assets/img/TeamLeitung/max.webp">
@@ -316,7 +312,7 @@ include "templates/header.html";
                         <div class="item_in">
                             <div class="img">
                                 <div class="abs_img" data-bg-img="assets/img/TeamLeitung/michel929.png"></div>
-                                <img alt="" src="assets/img/1x1.jpg">
+                                <img alt="michel929" src="assets/img/1x1.jpg">
                             </div>
                         </div>
                         <input type="hidden" value="assets/img/TeamLeitung/michel929.png">
@@ -325,7 +321,7 @@ include "templates/header.html";
                         <div class="item_in">
                             <div class="img">
                                 <div class="abs_img" data-bg-img="assets/img/TeamLeitung/max.webp"></div>
-                                <img alt="" src="assets/img/1x1.jpg">
+                                <img alt="max" src="assets/img/1x1.jpg">
                             </div>
                         </div>
                         <input type="hidden" value="assets/img/TeamLeitung/max.webp">
@@ -333,17 +329,17 @@ include "templates/header.html";
                     <div class="item">
                         <div class="item_in">
                             <div class="img">
-                                <div class="abs_img" data-bg-img="assets/img/collection/7.jpg"></div>
-                                <img alt="" src="assets/img/1x1.jpg">
+                                <div class="abs_img" data-bg-img="assets/img/TeamLeitung/michel929.png"></div>
+                                <img alt="Placeholder" src="assets/img/1x1.jpg">
                             </div>
                         </div>
-                        <input type="hidden" value="assets/img/collection/7.jpg">
+                        <input type="hidden" value="assets/img/TeamLeitung/michel929.png">
                     </div>
                     <div class="item">
                         <div class="item_in">
                             <div class="img">
                                 <div class="abs_img" data-bg-img="assets/img/TeamLeitung/P1L4.webp"></div>
-                                <img alt="" src="assets/img/1x1.jpg">
+                                <img alt="P1L4" src="assets/img/1x1.jpg">
                             </div>
                         </div>
                         <input type="hidden" value="assets/img/TeamLeitung/P1L4.webp">
@@ -380,13 +376,12 @@ include "templates/header.html";
         <div class="fn_cs_about">
             <div class="left_part">
                 <div class="img">
-                    <div class="img_in" data-bg-img="assets/img/Logo/logo-transparent.png"><img alt=""
-                                                                                                src="assets/img/1x1.jpg">
+                    <div class="img_in" data-bg-img="assets/img/Logo/logo-transparent.png"><img alt="Logo" src="assets/img/1x1.jpg">
                     </div>
                 </div>
                 <div class="bg_overlay">
                     <div class="bg_color"></div>
-                    <div class="bg_image" data-bg-img="assets/img/mockup/ipad-1.png"></div>
+                    <div class="bg_image" data-bg-img="assets/img/mockup/ipad-1.png" alt="IPad"></div>
                 </div>
             </div>
             <div class="right_part">
@@ -469,9 +464,9 @@ include "templates/header.html";
 
                     <!-- Video Shortcode -->
                     <div class="fn_cs_video">
-                        <img alt="" src="assets/img/mockup/ipad-2.png">
+                        <img alt="" src="assets/img/mockup/ipad-2.png" alt="Ipad">
                         <a class="popup-youtube" href="https://www.youtube.com/watch?v=zlMM_2nriG8">
-                            <img alt="" class="fn__svg" src="assets/svg/play.svg">
+                            <img alt="" class="fn__svg" src="assets/svg/play.svg" alt="play">
                         </a>
                     </div>
                     <!-- /Video Shortcode -->
@@ -666,7 +661,7 @@ include "templates/header.html";
                             </div>
                             <div class="image">
                                 <a href="blog-single.php?id=<?php echo $blogid; ?>">
-                                    <img alt="" src="<?php echo $banner; ?>">
+                                    <img alt="" src="<?php echo $banner; ?>" alt="banner">
                                 </a>
                             </div>
                             <div class="read_more">
