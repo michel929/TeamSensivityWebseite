@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
 
-User-agent: Googlebot
-Disallow: /default/
-
 Sitemap: https://sensivity.team/sitemap.xml
